@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Olá, {{ session['username'] }} 👋</h2>
+    <p>
+        <a href="{{ url_for('logout') }}">❌ Sair</a> | 
+        <a href="{{ url_for('add_product') }}">➕ Cadastrar Produto</a>
+    </p>
+
+    <h3>📦 Meus Produtos</h3>
+    <ul>
+        {% for produto in produtos %}
+            <li><strong>{{ produto[0] }}</strong>: {{ produto[1] }}</li>
+        {% else %}
+            <li>Nenhum produto cadastrado ainda.</li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>
