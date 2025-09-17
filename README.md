@@ -20,15 +20,15 @@ Este projeto é uma aplicação web simples desenvolvida em **Flask** que permit
 
 ## 📂 Estrutura do Projeto
 Aula 6/
-├── app.py # Arquivo principal da aplicação
-├── static/
-│ └── style.css # Estilos da interface
-└── templates/
-├── index.html # Página inicial
-├── register.html # Registro de usuários
-├── login.html # Login
-├── dashboard.html # Lista de produtos
-└── add_product.html # Cadastro de produtos
+- ├── app.py # Arquivo principal da aplicação
+- ├── static/
+- │ └── style.css # Estilos da interface
+- └── templates/
+- ├── index.html # Página inicial
+- ├── register.html # Registro de usuários
+- ├── login.html # Login
+- ├── dashboard.html # Lista de produtos
+- └── add_product.html # Cadastro de produtos
 
 ---
 
